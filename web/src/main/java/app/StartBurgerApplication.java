@@ -19,8 +19,8 @@ public class StartBurgerApplication {
     CommandLineRunner initDatabase(BurgerRepository burgerRepository) {
         return args -> {
             burgerRepository.save(new Burger("húsimádó", false, Integer.MAX_VALUE, 727 ));
-            burgerRepository.save(new Burger("Rickroll burger", false, 3, 1945 ));
-            burgerRepository.save(new Burger("Vándorzenész burger", true, 0, 1));
+            burgerRepository.save(new Burger("MushroomTower", false, 3, 1945 ));
+            burgerRepository.save(new Burger("Vándorzenész burger", true, 0, 900));
         };
     }
 }
