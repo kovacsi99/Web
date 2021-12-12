@@ -18,9 +18,9 @@ public class StartBurgerApplication {
     @Bean
     CommandLineRunner initDatabase(BurgerRepository burgerRepository) {
         return args -> {
-            burgerRepository.save(new Burger("Feleségem burger (húsimádó)", false, Integer.MAX_VALUE, 727 ));
-            burgerRepository.save(new Burger("https://www.youtube.com/watch?v=xvFZjo5PgG0 burger", false, 3, 1945 ));
-            burgerRepository.save(new Burger("Román burger", true, 0, 1));
+            burgerRepository.save(new Burger("húsimádó", false, Integer.MAX_VALUE, 727 ));
+            burgerRepository.save(new Burger("Rickroll burger", false, 3, 1945 ));
+            burgerRepository.save(new Burger("Vándorzenész burger", true, 0, 1));
         };
     }
 }
